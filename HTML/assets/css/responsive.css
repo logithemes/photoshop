@@ -1,0 +1,240 @@
+/*-------------------------------------------------*/
+/* 1. MOBILE VIEW RESPONSIVE
+/*-------------------------------------------------*/
+
+/*-------------------------------------------------------*/
+/* When the browser is 1200px to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+ 
+}
+
+/*-------------------------------------------------------*/
+/* When the browser is 992 to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 992px) {
+  .footer-follow{margin-top: 0;}
+  .img-slide{margin-left: 0;}
+  .hero-img{display: table;margin:  0 auto;margin-bottom: 60px;}
+  .contact-us{padding-top: 0;}
+  .gal-text{text-align: center;}
+  .blog{padding: 30px 0 0 0 ;}
+  .con-img img{transform: scale(1);margin-bottom: 50px;}
+  .hero-content{
+    text-align: center;
+    margin-bottom: 41px;
+}
+  .hero-content p{
+    padding-left: 0;
+}
+
+  
+  .nav .container {
+    max-width: 100%;
+  }
+  .nav-inner .side-bar-right .theme-btn {
+    display: none;
+  }
+  .nav-inner .side-bar-right {
+    /* position: absolute; */
+    right: 15px;
+    width: 100%;
+  }
+
+  .shapes {
+    display: none;
+  }
+
+  .fixed-bg img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .menu a:hover {
+    color: #fff;
+  }
+
+  .side-bar.act {
+    width: 100%;
+  }
+
+  .nav .row {
+    align-items: center;
+  }
+
+  .nav {
+   
+    padding: 35px 0;
+  }
+
+  .side-bar-right i {
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 0;
+  }
+
+  .logo img {
+    max-width: 128px;
+  }
+
+  .nav-inner .menu {
+    position: fixed;
+    left: -500px;
+    top: 0;
+    overflow-y: auto;
+    height: 100vh;
+    width: 300px;
+    background: #16243d;
+    padding: 31px 20px 20px 20px;
+    z-index: 99;
+    transition: all 0.5s ease;
+  }
+
+  .menu ul li:first-child {
+    display: block;
+  }
+
+  .menu li {
+    width: 100%;
+    padding-bottom: 13px;
+  }
+
+  .menu a {
+    color: #fff !important;
+    width: 100%;
+    border-bottom: 1px solid #908484;
+    padding-bottom: 17px;
+  }
+
+  .menu img {
+    width: 120px;
+    filter: invert(1);
+    margin-bottom: 24px;
+  }
+
+  .menu ul li:last-child {
+    border: 0;
+  }
+
+  .nav-inner .side-bar-right {
+  }
+
+  .logo {
+    position: absolute;
+    transform: scale(0.8);
+    left: 15px;
+  }
+
+  .menu-bar {
+    display: block;
+    position: absolute;
+    right: 15px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu span {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background: red;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .menu.menuact {
+    left: 0;
+  }
+
+  .cpy-right-top .cpy {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .foo-deati {
+    margin-top: 20px;
+  }
+
+  .team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 62px;
+  }
+
+  .ban-inn {
+    display: block;
+    text-align: center;
+  }
+
+  .ban-lhs h1 {
+    padding: 0;
+    font-size: 60px;
+  }
+
+  .ban-lhs p {
+    border-left: 0;
+    padding-right: 0;
+    padding-bottom: 25px;
+    padding-left: 0;
+  }
+
+  .banner {
+    padding-bottom: 0;
+    padding-top: 124px;
+  }
+}
+
+/*-------------------------------------------------------*/
+/* When the browser is 768px to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+ 
+}
+
+/*-------------------------------------------------------*/
+/* When the browser is 576px to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+  .brands li img{width: 42px;}
+  .contact-info{flex-direction: column;}
+  .contact-text{text-align: center;}
+  .blog .col-lg-6, .blog .col-sm-6{
+    padding: 0 15px;
+}
+  .b-text i, .b-text h2{transform: none;}
+  .b-text{
+    position: relative;
+    opacity: 1;
+    top: 0;
+    text-align: left;
+    padding: 10px 0 50px 20px;
+    left: 0;
+}
+  .b-img img{width: 100%;}
+}
+
+@media screen and (max-width: 480px) {
+ 
+}
