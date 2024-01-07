@@ -1,4 +1,14 @@
 $(document).ready(function () {
+
+    //team
+$(".team-det").mousemove(function(event){
+    $(".team-det img").css("opacity", "0");
+    $(this).children(".team-det img").css("opacity", "1");
+    var _left = event.pageX + "px";
+    $(".team-det img").css({left : _left});
+    
+})
+
     "use strict";
     //RESPONSIVE MENU BUTTON
     $(".menu-bar i").on("click", function () {
@@ -10,7 +20,8 @@ $(document).ready(function () {
     })
 
 
-  
+
+
     //SIDE BAR ACT
     $(".sidebat-act").on("click", function(){
         $(".side-bar").addClass("act");
@@ -35,11 +46,16 @@ $(window).on("scroll", function(){
         $(".nav").removeClass("act");
     }
 
-    //banner img translate
-      var _translatex = "-" + _topval / 4 + "px";
-      var _translatey =  _topval / 4 + "px";
-      $(".shapes3").css({'transform' : 'translate(' + _translatex +', ' + _translatex + ')'});
-      $(".shapes4").css({'transform' : 'translate(' + _translatey +', ' + _translatey + ')'});
+
+    $(".anima").each(function(){
+        var _anitop = $(this).offset().top - 100;
+        if(_topval >= _anitop){
+           var _getid = $(this).attr("id");
+           $(".menu a").removeClass("act");
+           $("." + _getid + "_nav").addClass("act");
+        }
+    })
+   
 
 });
 

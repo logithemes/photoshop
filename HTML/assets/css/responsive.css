@@ -14,6 +14,19 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+  .banner-inner h3{
+    font-size: 30px;
+}
+  .banner-inner a{
+    font-size: 17px;
+}
+  .blg-in-comment{padding: 30px;}
+  .blg-in-comment ul li:nth-child(1), .blg-in-comment ul li:nth-child(2){width: 100%;padding-right: 0;}
+  .blog-deatiles{padding: 80px 0 60px 0;}
+  .blog-det-inn h3{padding: 8px 0 10px 0;}
+  .blg-lhs{padding-right: 10px  !important;}
+  .menu .act{color: #3ec2ff;}
+  .cpy-right h3{text-align: center;line-height: 25px;}
   .footer-follow{margin-top: 0;}
   .img-slide{margin-left: 0;}
   .hero-img{display: table;margin:  0 auto;margin-bottom: 60px;}
@@ -124,8 +137,7 @@
     border: 0;
   }
 
-  .nav-inner .side-bar-right {
-  }
+  
 
   .logo {
     position: absolute;
@@ -203,6 +215,7 @@
     padding-bottom: 0;
     padding-top: 124px;
   }
+  .blg-search{margin-top: 40px;}
 }
 
 /*-------------------------------------------------------*/
@@ -210,6 +223,13 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
+  .tag-share{flex-direction: column;}
+  
+ 
+  .commen-banner {
+    padding: 127px 0 40px 14px;
+  }
+
  
 }
 
@@ -217,6 +237,14 @@
 /* When the browser is 576px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width: 576px) {
+  .team-det i{
+    font-size: 50px;
+}
+  .team-det h3{
+    font-size: 50px;
+    padding-left: 25px;
+}
+  .blog-left-img{flex-direction: column;}
   .brands li img{width: 42px;}
   .contact-info{flex-direction: column;}
   .contact-text{text-align: center;}

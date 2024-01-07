@@ -212,9 +212,9 @@ p {
   font-weight: 500;
   text-transform: capitalize;
 }
-
+.menu .act{color: #3ec2ff;text-decoration: underline;}
 .menu a:hover {
-  color: #ff00d5 !important;
+  color: #3dbffb !important;
   text-decoration: none;
   font-weight: 600;
 }
@@ -227,7 +227,7 @@ p {
   left: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
-  background: #ff00d5;
+  background: #3dbffb;
   transform: scalex(0);
   transform-origin: right;
 }
@@ -277,22 +277,23 @@ p {
   -ms-flex-align: center;
   -ms-flex-pack: center;
 }
-.side-bar-right i:hover{  color: #fff;
-  background: #571cff;}
+.side-bar-right i:hover{
+  background: #3dbffb;
+  }
 .menu-bar {
   display: none;
 }
 
 .menu-bar i {
   color: #fff;
-  background: #571cff;
+  background: #3ec2ff;
   padding: 5px 7px;
   text-align: center;
   font-size: 18px;
   border-radius: 3px;
   font-weight: 200;
   float: left;
-  cursor: pointer;
+  cursor: pointer;color: #000;
 }
 
 /*-------------------------------------------------*/
@@ -379,11 +380,11 @@ p {
   font-size: 16px;
   height: 35px;
   width: 35px;
-  background: rgb(87 28 254);
+  background: rgb(62 194 255);
   text-align: center;
   line-height: 34px;
   border-radius: 50%;
-  color: #ffff;
+  color: #000;
 }
 
 .side-panel-con span {
@@ -440,18 +441,19 @@ p {
 /*-------------------------------------------------*/
 .banner{background: url(../images/background/frstscreen-bg.png);background-size: cover;padding: 150px 0 100px 0;}
 .banner::before{position: absolute;content: "";bottom: 0;left: 0;right: 0;width: 100%;height: 100%;background: linear-gradient(360deg, #150a0a, transparent);}
-.hero-content{}
+
 .hero-content h1{
     color: #3ec2ff;
     font-size: 47px;
 }
+.hero-img:hover::before{transition: all 0.5s ease;transform: rotate(0deg) translateX(30px);}
 .hero-content span{display: block;font-family: 'Dancing Script', cursive;text-transform: uppercase;font-size: 60px;margin-top: 10px;text-shadow: 1px 1px 10px #c057f2, 1px 1px 16px #c057f2;}
 .hero-img{
     display: inline-block;
     /* overflow: hidden; */
     position: relative;
 }
-.hero-img::before{position: absolute;content: "";left: 0;top: 0;background: #243650;width: 100%;height: 100%;z-index: revert;right: 0;bottom: 0;transform: rotate(5deg);mix-blend-mode: multiply;}
+.hero-img::before{position: absolute;content: "";left: 0;top: 0;border: 2px solid #fff;width: 100%;height: 100%;z-index: revert;right: 0;bottom: 0;transform: rotate(5deg);/* mix-blend-mode: multiply; */transition: all 0.3s ease;}
 .hero-img:hover img{transform: translateX(30px);filter: saturate(0%) brightness(100%) contrast(100%);}
 .hero-img img{transition: all 0.3s ease;position: relative;z-index: auto;}
 
@@ -484,6 +486,7 @@ p {
     padding: 10px 30px;
     display: inline-block;
     margin: 10px 0 32px 0;
+    transition: all 0.3s ease;
 }
 .brands{
     width: 100%;
@@ -511,7 +514,7 @@ p {
 /*-------------------------------------------------*/
 
 .blog{
-    padding: 70px 4% 0 4%;
+    padding: 70px 4% 70px 4%;
 }
 .blog .col-lg-6, .blog .col-sm-6{
     padding: 0;
@@ -552,11 +555,73 @@ p {
     transform: translateY(10px);
     transition: all 0.3s ease;
 }
+.b-text a:hover{
+    color: #fff;
+    transition: all 0.5s ease;
+}
 .blog .position-relative:hover .b-text{transition: all 0.3s ease;opacity: 1;}
 .blog .position-relative:hover .b-text i, .b-text span, .b-text h2{transition: all 0.3s ease;}
 
 .blog .position-relative:hover .b-text h2{    transform: translateX(0);}
 
+/*-------------------------------------------------*/
+/*  team
+/*-------------------------------------------------*/
+.team{}
+.team-inner{
+    margin-top: -30px;
+}
+.team-inner ul{}
+.team-inner li{
+    border-bottom: 1px solid #fff;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 46px;
+    z-index: 1;
+}
+.team-det{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+/*.team-det img.act{opacity: 1;}*/
+.team-det:hover i{
+  color: #fff;
+  transition: all 0.3s ease;
+  }
+  .team-det:hover h3{-webkit-text-stroke: 1px #efece6;
+    color: transparent;
+    transition: all 0.3s ease;}
+.team-det i{
+    font-size: 75px;
+    -webkit-text-stroke: 1px #efece6;
+    color: transparent;
+    transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.team-det h3{
+    text-transform: uppercase;
+    font-size: 75px;
+    padding-left: 44px;
+    transition: all 0.3s ease;
+}
+.team-det img{
+    position: absolute;
+    right:  0;
+    top: -66px;
+    width: 200px;
+    height: 257px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0;
+   
+}
+.{}
+.{}
+.{}
 
 /*-------------------------------------------------*/
 /*  contact us
@@ -597,8 +662,7 @@ p {
     border-bottom: 1px solid #999;
     padding-top: 20px;
 }
-.contact-form{}
-.contact-form ul{}
+
 .contact-form li{
     padding-right: 10px;
     display: flex;
@@ -615,8 +679,9 @@ p {
     border: 2px solid #3dbffb;
     padding: 5px 30px;
     display: inline-block;
-    margin-top: 26px;
+    margin-top: 26px;transition: all 0.3s ease;
 }
+.contact-form .btn:hover, .gal-text a:hover{background:  #3dbffb;color: #000;transition: all 0.3s ease;}
 
 /*-------------------------------------------------*/
 /*  COPY RIGHT
@@ -667,14 +732,14 @@ p {
   color: var(--color) !important;
 }
 .footer-follow i{
-    width: 25px;
-    height: 25px;
-    background: #3dbffb;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    border: 1px solid #3dbffb;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    font-size: 13px;
 }
 .cpy-right ul li:last-child {
   width: 20%;
@@ -914,7 +979,7 @@ p {
   transition: all 0.5s ease;
   background: #000;
   border: 1px solid #fff;
-  color: #000;
+  color: #fff;
   height: 35px;
 }
 
@@ -1086,6 +1151,7 @@ p {
   font-weight: 500;
   padding-bottom: 7px;
   width: 100%;
+  color: #fff !important;
 }
 
 .blg-post-content h3 {
@@ -1104,71 +1170,6 @@ p {
   margin: 0 12px 0 0;
 }
 
-.categories,
-.help {
-  float: left;
-  width: 100%;
-  margin: 35px 0 0 0;
-  padding: 35px 35px 20px 35px;
-  border: 1px solid #f6f6f6;
-}
-
-.help {
-  position: sticky;
-  background: url(../images/places/9.jpg) no-repeat;
-  background-size: cover;
-  border-radius: 5px;
-  color: #fff;
-  padding: 35px 35px 15px 35px;
-  margin-top: 40px;
-  top: 65px;
-}
-
-.categories ul {
-  padding: 0;
-  margin: 0;
-}
-
-.categories li {
-  float: left;
-  width: 100%;
-  position: relative;
-  transition: all 0.4s ease;
-  border-bottom: 1px solid #f8efef;
-  padding: 15px 0;
-}
-
-.categories li:hover a {
-  border-bottom: 1px solid #3c3ddc;
-  transition: all 0.4s ease;
-}
-
-.categories li:hover i {
-  transition: all 0.4s ease;
-  background: #3c3ddc;
-  color: #fff;
-}
-
-.categories ul li:last-child {
-  border: 0;
-}
-
-.categories a {
-  font-size: 15px;
-  color: #fff;
-}
-
-.categories i {
-  transition: all 0.4s ease;
-  font-size: 14px;
-  font-style: normal;
-  float: right;
-  border: 1px solid #f8efef;
-  width: 22px;
-  height: 22px;
-  text-align: center;
-  border-radius: 50%;
-}
 
 .m-b {
   margin-bottom: 30px;
@@ -1200,60 +1201,7 @@ p {
   color: #fff;
 }
 
-.tags-share {
-  display: flex;
-  width: 100%;
-  text-transform: capitalize;
-  padding: 30px 0 40px 0;
-  justify-content: start;
-  display: -ms-flexbox;
-  -ms-flex-align: center;
-  -ms-flex-pack: center;
-}
 
-.tag-lhs {
-  flex-basis: 70%;
-}
-
-.tag-lhs span,
-.tag-share span {
-  font-weight: 500;
-}
-.tag-share i {
-  font-size: 17px;
-}
-.tag-lhs .point {
-  padding: 3px 15px;
-  font-weight: 500;
-  border-radius: 3px;
-  text-decoration: none;
-  border: 1px solid #e5e5e5;
-  margin-right: 7px;
-  transition: all 0.3s ease;
-  color: #fff;
-}
-
-.tag-lhs .point:hover {
-  background: #3c3ddc;
-  color: #fff;
-  transition: all 0.3s ease;
-}
-
-.tag-share {
-  display: flex;
-  align-items: flex-end;
-  justify-content: end;
-  display: -ms-flexbox;
-  -ms-flex-align: center;
-  -ms-flex-pack: center;
-}
-
-.tag-share a {
-  font-size: 19px;
-  color: #000;
-  margin: 0 8px;
-  background: none;
-}
 
 
 
